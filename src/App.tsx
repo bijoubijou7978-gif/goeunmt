@@ -279,33 +279,22 @@ export default function App() {
               ].map((item, i) => (
                 <div key={i} className="relative md:h-32 flex items-center">
                   <Reveal delay={i * 0.1} className="w-full">
-                    <div className={`grid grid-cols-[48px_1fr] md:grid-cols-[1fr_48px_1fr] gap-4 md:gap-12 items-center`}>
-                      {/* Left Side Content */}
-                      <div className={`${item.side === 'left' ? 'md:block' : 'md:invisible'} order-2 md:order-1`}>
-                        <div className={`bg-navy-mid/40 border border-white/10 rounded-xl p-5 md:p-6 transition-all duration-300 hover:border-gold-brand/30 group ${item.side === 'left' ? 'md:text-right' : ''}`}>
-                          <span className="text-[10px] font-bold tracking-widest text-gold-light block mb-1">{item.step}</span>
-                          <h4 className="text-sm md:text-base font-bold text-white mb-1 flex items-center gap-2 justify-end">
-                            {item.side === 'left' && <span className="w-1.5 h-1.5 rounded-full bg-gold-light" />}
-                            {item.title}
-                          </h4>
-                          <p className="text-xs text-white/50 leading-relaxed">{item.desc}</p>
-                        </div>
-                      </div>
-
+                    <div className="grid grid-cols-[48px_1fr] md:grid-cols-[1fr_48px_1fr] gap-4 md:gap-12 items-center">
                       {/* Center Icon */}
-                      <div className="order-1 md:order-2 flex justify-center relative z-10">
+                      <div className="col-start-1 md:col-start-2 flex justify-center relative z-10">
                         <div className="w-9 h-9 md:w-10 md:h-10 rounded-full bg-navy border-2 border-gold-brand flex items-center justify-center text-gold-light shadow-[0_0_20px_rgba(200,147,42,0.2)]">
                           {item.icon}
                         </div>
                       </div>
 
-                      {/* Right Side Content */}
-                      <div className={`${item.side === 'right' ? 'md:block' : 'md:invisible'} order-2 md:order-3`}>
+                      {/* Content */}
+                      <div className={`col-start-2 ${item.side === 'left' ? 'md:col-start-1 md:text-right' : 'md:col-start-3 md:text-left'}`}>
                         <div className="bg-navy-mid/40 border border-white/10 rounded-xl p-5 md:p-6 transition-all duration-300 hover:border-gold-brand/30 group">
                           <span className="text-[10px] font-bold tracking-widest text-gold-light block mb-1">{item.step}</span>
-                          <h4 className="text-sm md:text-base font-bold text-white mb-1 flex items-center gap-2">
-                            <span className="w-1.5 h-1.5 rounded-full bg-gold-light" />
+                          <h4 className={`text-sm md:text-base font-bold text-white mb-1 flex items-center gap-2 ${item.side === 'left' ? 'md:justify-end' : 'justify-start'}`}>
+                            <span className={`w-1.5 h-1.5 rounded-full bg-gold-light ${item.side === 'left' ? 'md:hidden' : ''}`} />
                             {item.title}
+                            <span className={`w-1.5 h-1.5 rounded-full bg-gold-light hidden ${item.side === 'left' ? 'md:block' : ''}`} />
                           </h4>
                           <p className="text-xs text-white/50 leading-relaxed">{item.desc}</p>
                         </div>
