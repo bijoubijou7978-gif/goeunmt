@@ -312,7 +312,7 @@ export default function App() {
               {[
                 { icon: "🗺️", label: "네이버 플레이스" },
                 { icon: "✍️", label: "브랜드 블로그" },
-                { icon: "📝", label: "블로그 상위노출" },
+                { icon: "📝", label: "블로그 최적화 노출" },
                 { icon: "🎬", label: "유튜브 숏츠" },
                 { icon: "📸", label: "인스타 릴스" },
                 { icon: "📎", label: "네이버 클립" }
@@ -378,7 +378,7 @@ export default function App() {
               {
                 num: "03",
                 title: "블로그 포스팅",
-                accent: "블로거 모집 · 배포 · 상위노출",
+                accent: "블로거 모집 · 배포 · 최적화 노출",
                 desc: "정보성, 홍보성, 후기성 글을 통해 업체에 대한 세밀한 이야기들을 전달합니다. 소비자가 궁금해하는 장단점과 디테일한 정보들을 꼼꼼하게 채워주어 선택에 확신을 더합니다.",
                 icon: <Users className="w-6 h-6 text-blue-brand" />,
                 iconBg: "bg-blue-brand/10"
@@ -386,7 +386,7 @@ export default function App() {
               {
                 num: "04",
                 title: "네이버 플레이스",
-                accent: "플레이스 SEO최적화 · 관리 · 상위노출",
+                accent: "플레이스 SEO최적화 · 관리 · 맞춤 노출",
                 desc: "업체의 정확한 정보와 위치를 확인하고, 실제 방문했던 사람들의 리뷰를 통해 마지막으로 검증하는 공간입니다. 풍부하고 진정성 있는 리뷰가 쌓일수록 방문 전환율은 폭발적으로 상승합니다.",
                 icon: <MapPin className="w-6 h-6 text-gold-brand" />,
                 iconBg: "bg-gold-brand/10"
@@ -430,11 +430,11 @@ export default function App() {
 
           <div className="grid grid-cols-2 md:grid-cols-5 gap-5 mt-14">
             {[
-              { icon: <Map className="w-9 h-9" />, title: "플레이스 최적화 & 상위노출", num: "01" },
+              { icon: <Map className="w-9 h-9" />, title: "플레이스 최적화 & 맞춤 노출", num: "01" },
               { icon: <Users className="w-9 h-9" />, title: "체험단 모집", num: "02" },
               { icon: <Video className="w-9 h-9" />, title: "SNS 영상 배포 (숏츠 · 릴스)", num: "03" },
               { icon: <PenTool className="w-9 h-9" />, title: "브랜드 블로그 운영", num: "04" },
-              { icon: <Megaphone className="w-9 h-9" />, title: "최상위 블로그 배포", num: "05" }
+              { icon: <Megaphone className="w-9 h-9" />, title: "프리미엄 블로그 배포", num: "05" }
             ].map((service, i) => (
               <div key={i} className="h-full">
                 <Reveal delay={i * 0.1} className="h-full">
@@ -652,11 +652,11 @@ export default function App() {
                       </label>
                       <div className="grid grid-cols-1 sm:grid-cols-2 gap-2.5">
                         {[
-                          { id: "place", label: "📍 플레이스 최적화 & 상위노출" },
+                          { id: "place", label: "📍 플레이스 최적화 & 맞춤 노출" },
                           { id: "review", label: "🤝 체험단 모집" },
                           { id: "sns", label: "🎬 SNS 영상 배포 (숏츠 · 릴스)" },
                           { id: "blog-brand", label: "✍️ 브랜드 블로그 운영" },
-                          { id: "blog-top", label: "📢 최상위 블로그 배포" }
+                          { id: "blog-top", label: "📢 프리미엄 블로그 배포" }
                         ].map((s) => (
                           <label 
                             key={s.id} 
