@@ -753,6 +753,8 @@ export default function App() {
         <p className="text-xs text-white/40 leading-loose">
           대표 직접 1:1 밀착 마케팅 · 홍보 사이클 전문<br />
           서울특별시 강남구 개포로 15길 3-4<br />
+          로아장 대표 : 장우종<br />
+          사업자번호 651-01-03855<br />
           © 2026 고은마케팅. All rights reserved.
         </p>
       </footer>
