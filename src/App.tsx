@@ -494,7 +494,7 @@ export default function App() {
 
           <div className="grid grid-cols-2 md:grid-cols-4 gap-6 md:gap-8">
             {[
-              { title: "인테리어 업체", desc: "감성 공간 기획 및 마케팅", img: "https://blog.kakaocdn.net/dna/bqXTTu/dJMcagSj6LO/AAAAAAAAAAAAAAAAAAAAAOgG6KUgQF2hCIDWfukWle_HO7ZFgNf45GrJqGK8Zhgk/img.jpg?credential=yqXZFxpELC7KVnFOS48ylbz2pIh7yKj8&expires=1774969199&allow_ip=&allow_referer=&signature=gIiVFSkI4Csln79rMb3nIFHc8ck%3D" },
+              { title: "인테리어 업체", desc: "감성 공간 기획 및 마케팅", img: "https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&q=80&w=800" },
               { title: "방충망업체", desc: "예약률 200% 상승 전략", img: "https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2FOs3H8%2FdJMcabDtK7Q%2FAAAAAAAAAAAAAAAAAAAAAJFGiZiCyh8cEpRQ0iGIbQb3qKHAjU0dUp_KLq3JwO1y%2Fimg.jpg%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1774969199%26allow_ip%3D%26allow_referer%3D%26signature%3Dq2ngIvooAgdPVrD9hmMbn3y3PL0%253D" },
               { title: "설비업체", desc: "타겟 맞춤형 콘텐츠 제작", img: "https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2FbZAf3S%2FdJMcadusmS6%2FAAAAAAAAAAAAAAAAAAAAAG-ziMtcJVOKe3MbJl3JYUROEQYDsboKwgtBEQeNbhjR%2Fimg.jpg%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1774969199%26allow_ip%3D%26allow_referer%3D%26signature%3DhKhEgZ7pxgHHjGbiLOleq004ftY%253D" },
               { title: "요식업 맛집업체", desc: "후기강화 플레이스최적화 모객성공", img: "https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2FbqTPJn%2FdJMcaiihH5f%2FAAAAAAAAAAAAAAAAAAAAAAg7iVHynTK2CCVX9w1e-S8qgpeS1AwdCzIzdVJNHnzj%2Fimg.jpg%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1774969199%26allow_ip%3D%26allow_referer%3D%26signature%3DqrXUrw73k22Ya%252Bl74vnCGY1%252B0k4%253D" },
@@ -505,11 +505,11 @@ export default function App() {
             ].map((item, i) => (
               <Reveal key={i} delay={i * 0.05}>
                 <div className="group">
-                  <div className="aspect-square overflow-hidden rounded-xl mb-4 shadow-md group-hover:shadow-xl transition-all duration-500">
+                  <div className="aspect-square overflow-hidden rounded-xl mb-4 shadow-md group-hover:shadow-xl transition-all duration-500 bg-gray-50 flex items-center justify-center p-2">
                     <img 
                       src={item.img} 
                       alt={item.title} 
-                      className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
+                      className="w-full h-full object-contain group-hover:scale-105 transition-transform duration-700"
                       referrerPolicy="no-referrer"
                     />
                   </div>
